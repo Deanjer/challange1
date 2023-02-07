@@ -8,29 +8,50 @@
   </head>
   <body>
     <script>
-        var myName = "Dean";
-        var myAge = "16"; var myHairColor = "blond";
-        var leeg = "";
-        var zeven_zeven = "7";
-        var nul = "0";
-        var myBirthyear = "2006";
-        var antwoord = myBirthyear / myAge; 
-        //hierboven staan alle inistiele variabelen 
-        document.write("uitkomst van vraag 8.1: "+myAge +"<br>");
-        document.write("8.2"+ " - " +myAge * myBirthyear +"<br>");
-        document.write("8.3"+ " - " +myBirthyear / myAge +"<br>");
-        //document.write("8.4"+ " - " +myAge * myBirthyear +"<br>");
-        document.write("8.5"+ " - " + antwoord.toFixed(2) +"<br>");
-        document.write("8.6"+ " - " +  2,5 * 2,5 +"<br>");
-        document.write("8.7"+ " - " +  Math.PI * 2 +"<br>");
-        document.write("8.8"+ " - " +  12 / 0 +"<br>");
-        document.write("8.9"+ " - " +  myName * 2 +"<br>");
-        document.write("8.10"+ " - " +  myAge * 2+1 +"<br>");
-        document.write("8.11"+ " - " +  myAge * (2 + 1) +"<br>");
-        document.write("8.12"+ " - " +  myAge + 1 +"<br>");
-        document.write("8.13"+ " - " +  leeg * 1 +"<br>");
+      var myName = "Dean";
+      var myAge = 16;
+      var myHairColor = "blond";
+      var leeg = "";
+      var zeven_zeven = "7";
+      var nul = "0";
+      var myBirthyear = "2006";
+      var antwoord = myBirthyear / myAge;
+      //hierboven staan alle inistiele variabelen
+      document.write("uitkomst van vraag 8.1: " + myAge + "<br>");
+      document.write("8.2" + " - " + myAge * myBirthyear + "<br>");
+      document.write("8.3" + " - " + myBirthyear / myAge + "<br>");
+      //document.write("8.4"+ " - " +myAge * myBirthyear +"<br>");
+      document.write("8.5" + " - " + antwoord.toFixed(2) + "<br>");
+      document.write("8.6" + " - " + 2, 5 * 2, 5 + "<br>");
+      document.write("8.7" + " - " + Math.PI * 2 + "<br>");
+      document.write("8.8" + " - " + 12 / 0 + "<br>");
+      document.write("8.9" + " - " + myName * 2 + "<br>");
+      document.write("8.10" + " - " + myAge * 2 + 1 + "<br>");
+      document.write("8.11" + " - " + myAge * (2 + 1) + "<br>");
+      document.write("8.12" + " - " + myAge + 1 + "<br>");
+      document.write("8.13" + " - " + leeg * 1 + "<br>" + "<br>" + "<br>");
 
-        document.write("8" + "<br>");
+      document.write("10" + "<br>");
+      document.write(
+        "tekst van vraag 10.1 " + "ik ben een 'brave' student" + "<br>"
+      );
+      document.write("tekst van vraag 10.2 " + myName + "<br>");
+      document.write("tekst van vraag 10.3 " + myName[0] + "<br>");
+      document.write("tekst van vraag 10.4 " + myName[3] + "<br>");
+      document.write("tekst van vraag 10.5 " + myName + " " + myName + "<br>");
+      document.write("tekst van vraag 10.6 " + myName + " " + myAge+ "<br>");
+      document.write("tekst van vraag 10.7 " + myAge + " " + myAge + "<br>");
+      document.write("tekst van vraag 10.8 " + (myAge + myAge) + "<br>" + "<br>" + "<br>");
+      document.write("12" + "<br>");
+
+      let myArray = [1,2,3,4,5,6,7,8,9,10];
+      myArray.push(11);
+      myArray.reverse()
+      myArray.pop();
+      myArray.splice(5,2)
+      document.write(myArray)
+
+      var myArrayLength = array.length;
     </script>
   </body>
 </html>
