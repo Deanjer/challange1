@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let myName = "Dean";
+      let myAge = 16,
+        myHairColor = "blond";
+      let leeg;
+      let _7zeven = 7;
+      let _null = null;
+
+      // hierboven staan alle initiële variabelen
+
+      document.write("uitkomst van vraag 8.1: " + myAge * 1) + "<br>" ;
+      let myBirthyear = 2006;
+      document.write("<br>")
+      document.write("uitkomst van vraag 8.2: " + myAge * myBirthyear + "<br>");
+      document.write(
+        "uitkomst van vraag 8.3: " + Math.ceil(myBirthyear / myAge)
+      );
+      document.write(
+        "uitkomst van vraag 8.4: " +
+          Math.max(myBirthyear / myAge, myAge / myBirthyear)
+      );
+      document.write(
+        "uitkomst van vraag 8.5: " + (myBirthyear / myAge).toFixed(2)
+      );
+      document.write("uitkomst van vraag 8.6: " + 2.5 * 2.5);
+      document.write("uitkomst van vraag 8.7: " + Math.sin(Math.PI * 2));
+      // 8.8 resultaat is onbepaald
+      document.write("uitkomst van vraag 8.9: " + myAge * 2);
+      document.write("uitkomst van vraag 8.10: " + (myAge * 2 + 1));
+      document.write("uitkomst van vraag 8.11: " + myAge * (2 + 1));
+      document.write("uitkomst van vraag 8.12: " + ++myAge);
+      // 8.13 resultaat is NaN
+
+      document.write("tekst van vraag 10.1: " + "ik ben een 'brave' student");
+      document.write("tekst van vraag 10.2: " + myName);
+      document.write("tekst van vraag 10.3: " + myName.charAt(0));
+      document.write(
+        "tekst van vraag 10.4: " + myName.charAt(myName.length - 1)
+      );
+      document.write("tekst van vraag 10.5: " + myName + " " + myName);
+      document.write("tekst van vraag 10.6: " + myName + " " + myAge);
+      document.write("tekst van vraag 10.7: " + myAge + " " + myAge);
+      document.write("tekst van vraag 10.8: " + (myAge + myAge));
+
+      let myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      myArray.push(11);
+      myArray.reverse();
+      myArray.pop();
+      document.write("uitkomst van vraag 12.4: " + myArray[0]);
+      document.write("uitkomst van vraag 12.5: " + myArray[myArray.length - 1]);
+    </script>
+  </body>
+</html>

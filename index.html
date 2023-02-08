@@ -39,19 +39,27 @@
       document.write("tekst van vraag 10.3 " + myName[0] + "<br>");
       document.write("tekst van vraag 10.4 " + myName[3] + "<br>");
       document.write("tekst van vraag 10.5 " + myName + " " + myName + "<br>");
-      document.write("tekst van vraag 10.6 " + myName + " " + myAge+ "<br>");
+      document.write("tekst van vraag 10.6 " + myName + " " + myAge + "<br>");
       document.write("tekst van vraag 10.7 " + myAge + " " + myAge + "<br>");
-      document.write("tekst van vraag 10.8 " + (myAge + myAge) + "<br>" + "<br>" + "<br>");
+      document.write(
+        "tekst van vraag 10.8 " + (myAge + myAge) + "<br>" + "<br>" + "<br>"
+      );
       document.write("12" + "<br>");
 
-      let myArray = [1,2,3,4,5,6,7,8,9,10];
+      let myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
       myArray.push(11);
-      myArray.reverse()
+      myArray.reverse();
       myArray.pop();
-      myArray.splice(5,2)
-      document.write(myArray)
+      myArray.splice(5, 2);
+      document.write(myArray + "<br>");
 
-      var myArrayLength = array.length;
+      var myArrayLength = myArray.length;
+      //   myArrayLength.length = 2;
+      document.write(myArrayLength + "<br>" + "<br>");
+
+      for (let i = 0; i < myArrayLength; i++) {
+        document.write(myArray[i] + "<br>")
+      }
     </script>
   </body>
 </html>
