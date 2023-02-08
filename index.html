@@ -54,12 +54,23 @@
       document.write(myArray + "<br>");
 
       var myArrayLength = myArray.length;
-      //   myArrayLength.length = 2;
+      var newArray = [];
       document.write(myArrayLength + "<br>" + "<br>");
 
-      for (let i = 0; i < myArrayLength; i++) {
-        document.write(myArray[i] + "<br>")
+      for (var i = 0; i < myArrayLength; i++) {
+        if (i === 0) {
+          continue;
+        }
+
+        if (myArray[i] !== 3) {
+          if (myArray[i] === 7) {
+            newArray.push(myArray[i] * 2);
+          } else {
+            newArray.push(myArray[i]);
+          }
+        }
       }
+      document.write(newArray);
     </script>
   </body>
 </html>
