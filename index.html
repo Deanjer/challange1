@@ -70,7 +70,49 @@
           }
         }
       }
-      document.write(newArray);
+      document.write(newArray + "<br>");
+
+      // vanaf 20
+      newArray[2] = "x";
+      document.write(newArray + "<br>");
+      var number = myArray[3];
+      myArray[3] = number + "";
+      console.log(typeof myArray[3]);
+
+      document.write(newArray + "<br>" + "<br>");
+      var waarde1 = 5;
+      var waarde2 = 5;
+      function compareValues(waarde1, waarde2) {
+        if (waarde1 === waarde2) {
+          return "ja";
+        } else {
+          const nee = "nee";
+          return nee.repeat(10);
+        }
+      }
+
+      document.write(compareValues("6", 6) + "<br>");
+      document.write(compareValues("dit ben ik", myName) + "<br>");
+      document.write(compareValues(myName, myName));
+      document.write("<br>");
+      document.write(compareValues(waarde1, waarde2));
+      console.log(compareValues(waarde1, waarde2));
+
+      document.write("<br>" + "<br>");
+
+      //   document.write(nee);
+
+      var huidigeDatum = new Date();
+      document.write(huidigeDatum.toLocaleDateString());
+
+      document.write("<br>" + "<br>");
+      const maand = new Date();
+      let month = maand.getMonth();
+      document.write(month + 1);
+      document.write("<br>" + "<br>");
+      const dag = new Date();
+      let day = dag.getDate();
+      document.write(day);
     </script>
   </body>
 </html>
